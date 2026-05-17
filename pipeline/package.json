@@ -6,15 +6,17 @@
     "start": "tsx src/run.ts",
     "dry-run": "DRY_RUN=true tsx src/run.ts",
     "dev": "tsx watch src/run.ts",
+    "retention": "tsx src/retention.ts",
     "check-deps": "tsx src/scripts/deps-tracker.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.39.0",
-    "@supabase/supabase-js": "^2.49.4",
-    "dotenv": "^16.4.7"
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.4.7",
+    "pg": "^8.20.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
+    "@types/pg": "^8.20.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
