@@ -50,7 +50,7 @@ export default function Reviews() {
               className="bg-white/6 border border-white/10 hover:border-white/20 rounded-2xl p-7 transition-all duration-300 cursor-default"
             >
               <div className="flex gap-1 mb-4">
-                {[...Array(t.stars)].map((_, j) => (
+                {[...Array(t.rating)].map((_, j) => (
                   <Star key={j} className="w-4 h-4 text-[var(--color-orange-400)] fill-[var(--color-orange-400)]" />
                 ))}
               </div>
