@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — Warm White + Forest Green + Walnut */
+  --color-forest-900: #14361F;
+  --color-forest-800: #1F4E2C;
+  --color-forest-600: #2D6A3F;
+  --color-forest-500: #3A8550;
+  --color-forest-400: #52A36A;
+
+  --color-walnut-700: #6B4C22;
+  --color-walnut-500: #8B6236;
+  --color-walnut-300: #C4A46A;
+
+  --color-warm-50: #FAF9F7;
+  --color-warm-100: #F5F2EE;
+  --color-warm-200: #EDE8E1;
+  --color-warm-400: #B5A899;
+  --color-warm-600: #6B5F52;
+
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(20, 54, 31, 0.12);
+  --shadow-cta: 0 8px 32px -4px rgba(31, 78, 44, 0.40);
+  --shadow-nav: 0 2px 16px rgba(20, 54, 31, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FAF9F7;
+  color: #14361F;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

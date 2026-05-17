@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-navy-900: #0F1F3D;
+  --color-navy-800: #1E3A5F;
+  --color-navy-700: #1E40AF;
+  --color-navy-600: #2563EB;
+  --color-blue-500: #3B82F6;
+  --color-blue-400: #60A5FA;
+
+  --color-orange-600: #EA580C;
+  --color-orange-500: #F97316;
+  --color-orange-400: #FB923C;
+
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-400: #94A3B8;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-900: #0F172A;
+
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  /* Typography */
+  --font-display: 'Rubik', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(15, 31, 61, 0.12);
+  --shadow-cta: 0 8px 32px -4px rgba(249, 115, 22, 0.40);
+  --shadow-nav: 0 2px 16px rgba(15, 31, 61, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F8FAFC;
+  color: #0F172A;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

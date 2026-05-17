@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — Deep Charcoal + Gold */
+  --color-charcoal-950: #0A0A14;
+  --color-charcoal-900: #111128;
+  --color-charcoal-800: #1A1A35;
+  --color-charcoal-700: #252550;
+
+  --color-gold-600: #A8872A;
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #D4B96A;
+  --color-gold-300: #E8D49A;
+
+  --color-cream-50: #FEFCF5;
+  --color-cream-100: #F5F0E8;
+  --color-cream-200: #EDE5D0;
+
+  --color-gray-400: #9CA3AF;
+  --color-gray-600: #4B5563;
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(10, 10, 20, 0.18);
+  --shadow-cta: 0 8px 32px -4px rgba(201, 168, 76, 0.40);
+  --shadow-nav: 0 2px 16px rgba(10, 10, 20, 0.30);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FEFCF5;
+  color: #111128;
+  font-family: 'Source Sans 3', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

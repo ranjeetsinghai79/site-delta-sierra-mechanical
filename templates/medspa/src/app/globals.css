@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — Warm Ivory + Rose Gold */
+  --color-brand-950: #1A1008;
+  --color-brand-900: #2D1E12;
+
+  --color-rose-gold-700: #9A6F52;
+  --color-rose-gold-500: #C08B6A;
+  --color-rose-gold-400: #D4A882;
+  --color-rose-gold-300: #E8C9B0;
+
+  --color-blush-200: #F5E6D8;
+  --color-blush-100: #FAF2EC;
+  --color-ivory: #FAF7F2;
+
+  --color-stone-50: #FAFAF9;
+  --color-stone-200: #E7E5E4;
+  --color-stone-400: #A8A29E;
+  --color-stone-600: #57534E;
+
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(154, 111, 82, 0.15);
+  --shadow-cta: 0 8px 32px -4px rgba(192, 139, 106, 0.45);
+  --shadow-nav: 0 2px 16px rgba(45, 30, 18, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FAF7F2;
+  color: #2D1E12;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-purple-800: #5B21B6;
+  --color-purple-700: #6D28D9;
+  --color-purple-600: #7C3AED;
+  --color-purple-500: #8B5CF6;
+  --color-purple-400: #A78BFA;
+  --color-purple-100: #EDE9FE;
+  --color-yellow-500: #F59E0B;
+  --color-yellow-400: #FCD34D;
+  --color-yellow-300: #FDE68A;
+  --color-warm-50: #FFFBF5;
+  --color-warm-100: #FEF3C7;
+  --color-warm-200: #FDE68A;
+  --color-peach-100: #FFEDD5;
+  --color-gray-400: #9CA3AF;
+  --color-gray-600: #4B5563;
+  --color-gray-900: #111827;
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  --font-display: 'Nunito', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+
+  --shadow-cta: 0 8px 32px -4px rgba(109,40,217,0.35);
+  --shadow-card: 0 4px 24px -4px rgba(109,40,217,0.10);
+  --shadow-nav: 0 2px 16px rgba(109,40,217,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFBF5;
+  color: #111827;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

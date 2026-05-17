@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — Sky Blue + Deep Blue + Crisp White */
+  --color-blue-900: #1E3A8A;
+  --color-blue-800: #1E40AF;
+  --color-blue-700: #1D4ED8;
+  --color-blue-600: #2563EB;
+
+  --color-sky-500: #0EA5E9;
+  --color-sky-400: #38BDF8;
+  --color-sky-300: #7DD3FC;
+
+  --color-clean-50: #F0F9FF;
+  --color-clean-100: #E0F2FE;
+  --color-clean-200: #BAE6FD;
+
+  --color-gray-400: #9CA3AF;
+  --color-gray-600: #4B5563;
+  --color-white: #FFFFFF;
+  --color-success: #16A34A;
+
+  /* Typography */
+  --font-display: 'Nunito', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px -4px rgba(14, 165, 233, 0.12);
+  --shadow-cta: 0 8px 32px -4px rgba(14, 165, 233, 0.45);
+  --shadow-nav: 0 2px 16px rgba(30, 58, 138, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: #1E3A8A;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
