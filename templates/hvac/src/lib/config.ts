@@ -1,4 +1,20 @@
-import type { SiteConfig, BrandStoryChapter } from "@core/web/types"
+// Inline types — no @core/web dependency needed in old-format repos
+type Business = {
+  name: string; tagline: string; phone: string; phoneHref: string;
+  email: string; address: string; city: string; serviceAreas: string[];
+  license: string; since: string; google_rating: string; review_count: string;
+  emergency: boolean; social: { google: string; yelp: string; facebook: string };
+  theme: string; niche: string;
+}
+type ServiceItem = { icon: string; title: string; desc: string; urgent: boolean }
+type Testimonial = { name: string; location: string; stars: number; text: string }
+type Stat = { value: string; label: string }
+type Reason = { icon: string; title: string; desc: string }
+type BrandStoryChapter = { index: string; label: string; headline: string; body: string; bg: string; fg: string }
+type SiteConfig = {
+  business: Business; services: ServiceItem[]; testimonials: Testimonial[];
+  trustBadges: string[]; stats: Stat[]; reasons: Reason[];
+}
 
 export const config: SiteConfig & { brandStoryChapters: BrandStoryChapter[] } = {
   business: {
@@ -75,7 +91,7 @@ export const config: SiteConfig & { brandStoryChapters: BrandStoryChapter[] } = 
       index: "02",
       label: "Our Standard",
       headline: "Same-Day. Every Time.",
-      body: "We built our reputation on one rule: if your HVAC fails, we show up the same day. Twenty years later, that commitment hasn't changed. Neither has the Central Valley's heat.",
+      body: "We built our reputation on one rule: if your HVAC fails, we show up the same day. Twenty years later, that commitment has not changed. Neither has the Central Valley heat.",
       bg: "var(--brand-surface)",
       fg: "var(--brand-text)",
     },
@@ -83,7 +99,7 @@ export const config: SiteConfig & { brandStoryChapters: BrandStoryChapter[] } = 
       index: "03",
       label: "Our Promise",
       headline: "Fair Prices. No Surprises.",
-      body: "Every job starts with an upfront quote. We explain what we're doing and why. You approve it before we touch anything. That's the Delta Sierra way.",
+      body: "Every job starts with an upfront quote. We explain what we are doing and why. You approve it before we touch anything. That is the Delta Sierra way.",
       bg: "var(--brand-accent)",
       fg: "#ffffff",
     },
@@ -93,5 +109,6 @@ export const config: SiteConfig & { brandStoryChapters: BrandStoryChapter[] } = 
 // Backward compatibility exports for old-format template components
 export const BUSINESS = config.business
 export const SERVICES = config.services
-export const TESTIMONIALS = config.testimonials.map(t => ({ ...t, rating: t.stars }))
+export const TESTIMONIALS = config.testimonials.map((t: Testimonial) => ({ ...t, rating: t.stars }))
 export const TRUST_BADGES = config.trustBadges
+
